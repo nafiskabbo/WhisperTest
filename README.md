@@ -14,5 +14,7 @@ The machine learning model consists of two files that should be placed in the **
 ### 2. Audio File to Transcribe
 You will need an audio file that you want to transcribe. The audio file should be in a supported format (`.wav`).
 
+The audio file used for this test is (`jfk.wav`)
+
 **Location:**
 Place the models and audio file in the **Downloads** folder
