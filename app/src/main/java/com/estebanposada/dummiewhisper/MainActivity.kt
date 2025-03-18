@@ -66,7 +66,7 @@ class MainActivity : ComponentActivity() {
                                         "/recordings/OniriUser.user?.id/$dreamId",
                             )
                         if (!directory.exists()) directory.mkdirs()
-                        file = File(directory, "$recordingId.m4a")
+                        file = File(directory, "$recordingId.wav")
                         file?.let { recorder.start(it) }
                     }, onPlay = {
                         recorder.stop()
@@ -79,11 +79,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-    }
-
-    companion object {
-        const val ENGLISH_ONLY_MODEL_FILE: String = "whisper-tiny.en.tflite"
-        const val ENGLISH_ONLY_VOCAB_FILE: String = "filters_vocab_en.bin"
     }
 }
 
